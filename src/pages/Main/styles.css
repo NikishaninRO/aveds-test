@@ -1,0 +1,10 @@
+.main-page__container {
+  margin: 96.5px 197px;
+  padding: 0 0 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .main-page__container {
+    margin: 56.5px 10px;
+  }
+}

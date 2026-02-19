@@ -1,0 +1,42 @@
+.option-card__container {
+  box-shadow: 0px 13px 19px 0px #00000012;
+  display: flex;
+  flex-direction: column;
+  padding: 35px 40px;
+  gap: 20px;
+}
+
+.option-card__container__icon {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background-color: var(--danger-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.option-card__container__title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.option-card__container__divider {
+  height: 2px;
+  width: 50px;
+  background-color: var(--danger-color);
+}
+
+.option-card__container__divider {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.option-card__container__description {
+  font-weight: 400;
+  size: 14px;
+  line-height: 20px;
+  color: var(--second-text-color);
+}

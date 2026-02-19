@@ -1,0 +1,34 @@
+.header__container {
+  height: 80px;
+  border-bottom: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo {
+  margin: 31.19px 71.73px;
+}
+
+.link {
+  color: var(--second-text-color);
+}
+
+.header__container__right {
+  display: flex;
+  align-items: center;
+  gap: 49px;
+  margin: 0 70px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    margin: 31.19px 10px;
+  }
+
+  .header__container__right {
+    gap: 10px;
+    margin: 0 10px 0;
+  }
+}

@@ -1,0 +1,35 @@
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+.button-text--primary {
+  padding: 15px 50px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.button-text--secondary {
+  padding: 8px 60px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.button--primary {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border-color: var(--primary-color);
+}
+
+.button--secondary {
+  background-color: var(--white-color);
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+@media screen and (max-width: 768px) {
+  .button-text--secondary {
+    padding: 6px 20px;
+  }
+}

@@ -1,0 +1,23 @@
+html,
+body,
+:root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+
+  font-family: Montserrat, sans-serif;
+  color: var(--text-color);
+
+  --white-color: #ffffff;
+  --primary-color: #ff685b;
+  --text-color: #252b42;
+  --second-text-color: #737373;
+  --danger-color: #e74040;
+
+  --tablet: 768px;
+  --mobile: 375px;
+}
+
+a {
+  text-decoration: none;
+}
