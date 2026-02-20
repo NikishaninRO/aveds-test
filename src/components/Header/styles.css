@@ -7,11 +7,11 @@
   width: 100%;
 }
 
-.logo {
+.header__container__logo {
   margin: 31.19px 71.73px;
 }
 
-.link {
+.header__container__link {
   color: var(--second-text-color);
 }
 
@@ -23,7 +23,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .logo {
+  .header__container__logo {
     margin: 31.19px 10px;
   }
 

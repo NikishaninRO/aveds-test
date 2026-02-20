@@ -5,8 +5,10 @@ import { BrowserRouter, Routes, Route } from 'react-router'
 import MainTemplate from './components/MainTemplate/index.tsx'
 import MainPage from './pages/Main/index.tsx'
 import ContactsPage from './pages/Contacts/index.tsx'
-import './index.css'
 import ProfilePage from './pages/Profile/index.tsx'
+import ProtectedRoute from './components/ProtectedRoute/index.tsx'
+import AuthProvider from './providers/AuthProvider/index.tsx'
+import './index.css'
 
 async function enableMocking() {
   if (import.meta.env.VITE_NODE_ENV === 'development') {
@@ -25,13 +27,17 @@ enableMocking().then(() => {
   rootElement.render(
     <StrictMode>
       <BrowserRouter>
-        <Routes>
-          <Route element={<MainTemplate />}>
-            <Route path='/' element={<MainPage />} />
-            <Route path='/contacts' element={<ContactsPage />} />
-            <Route path='/profile' element={<ProfilePage />} />
-          </Route>
-        </Routes>
+        <AuthProvider>
+          <Routes>
+            <Route element={<MainTemplate />}>
+              <Route path='/' element={<MainPage />} />
+              <Route path='/contacts' element={<ContactsPage />} />
+              <Route element={<ProtectedRoute />}>
+                <Route path='/profile' element={<ProfilePage />} />
+              </Route>
+            </Route>
+          </Routes>
+        </AuthProvider>
       </BrowserRouter>
     </StrictMode>
   )

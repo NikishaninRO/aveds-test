@@ -7,7 +7,7 @@ const MainTemplate: FC = () => {
   return (
     <>
       <Header />
-      <div className='container'>
+      <div className='main-template__container'>
         <Outlet />
       </div>
     </>

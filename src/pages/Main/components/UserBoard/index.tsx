@@ -10,7 +10,9 @@ const UserBoard: FC = () => {
         Место для получения медицинской помощи
       </h1>
       <div className='user-board__actions'>
-        <Button>Войти</Button>
+        <Link to='/profile'>
+          <Button>Войти</Button>
+        </Link>
         <Link to='/contacts'>
           <Button classNames='button--secondary button-text--primary'>
             Контакты

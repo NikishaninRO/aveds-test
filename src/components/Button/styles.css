@@ -1,7 +1,8 @@
 button {
-  font-family: inherit;
   cursor: pointer;
   border-radius: 7px;
+  box-shadow: none;
+  border: 2px solid;
 }
 
 .button-text--primary {
@@ -26,6 +27,11 @@ button {
   background-color: var(--white-color);
   color: var(--primary-color);
   border-color: var(--primary-color);
+}
+
+.button--disabled {
+  opacity: 50%;
+  cursor: auto;
 }
 
 @media screen and (max-width: 768px) {

@@ -4,20 +4,28 @@ body,
   margin: 0;
   padding: 0;
   height: 100%;
+  overflow: auto;
 
   font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
   color: var(--text-color);
 
   --white-color: #ffffff;
+  --black-color: #00000012;
   --primary-color: #ff685b;
   --text-color: #252b42;
   --second-text-color: #737373;
   --danger-color: #e74040;
-
-  --tablet: 768px;
-  --mobile: 375px;
 }
 
 a {
   text-decoration: none;
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400 700;
+  src: url('../src/assets/fonts/Montserrat-VariableFont_wght.ttf');
 }

@@ -1,0 +1,2 @@
+export const NAME_FIELD_LENGTH_MIN = 3
+export const PASSWORD_FIELD_LENGTH_MIN = 8

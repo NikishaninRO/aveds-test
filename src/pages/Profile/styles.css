@@ -23,4 +23,8 @@
     font-size: 28px;
     line-height: 39px;
   }
+
+  .profile-page__actions button {
+    padding: 15px 25px;
+  }
 }
